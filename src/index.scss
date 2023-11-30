@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+button,
+select,
+input,
+textarea {
+   font: inherit;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul[class] {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+body {
+   min-height: 100vh;
+   background-color: #070d20;
+}
+
+@keyframes opac {
+   0% {
+      opacity: 0;
+   }
+
+   50% {
+      opacity: 0.5;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+.circle-effect {
+   @apply bg-squid-pink rounded-full w-11 h-11 flex items-center justify-center;
+}
+
+.gradient {
+   @apply absolute w-full h-full top-0 left-0;
+   background: linear-gradient(220deg, #0c162c, #4d1c3d);
+   opacity: 0.85;
+}
+
+.logo-image {
+   width: 35px;
+   height: 35px;
+}
